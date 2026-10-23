@@ -1,179 +1,329 @@
 
-<header class="cart-header">
-    <div class="cart-header-inner">
-        <a href="index.html" class="cart-logo" aria-label="NovaMart home">
-            <span class="cart-logo-nova">nova</span><span class="cart-logo-mart">mart.</span>
-        </a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <nav class="cart-nav" id="cart-navigation" aria-label="Main navigation">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="cart.html" class="cart-nav-active" aria-current="page">
-                Cart <span id="cart-nav-count">0</span>
+    <title>Shopping Cart | NovaMart</title>
+
+    <meta
+        name="description"
+        content="Review your shopping cart and prepare your order at NovaMart."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="cart.css">
+
+    <script src="cart.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="cart-header">
+        <div class="cart-header-inner">
+
+            <a
+                href="index.html"
+                class="cart-logo"
+                aria-label="NovaMart home"
+            >
+                <span class="cart-logo-nova">nova</span><span class="cart-logo-mart">mart.</span>
             </a>
-        </nav>
 
-        <button type="button" class="cart-mobile-toggle"
+            <nav
+                class="cart-nav"
+                id="cart-navigation"
+                aria-label="Main navigation"
+            >
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+
+                <a
+                    href="cart.html"
+                    class="cart-nav-active"
+                    aria-current="page"
+                >
+                    Cart
+                    <span id="cart-nav-count">0</span>
+                </a>
+            </nav>
+
+            <button
+                type="button"
+                class="cart-mobile-toggle"
                 id="cart-mobile-toggle"
                 aria-label="Open navigation menu"
                 aria-controls="cart-navigation"
-                aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </div>
-</header>
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-<body>
-    <header class="cart-header">
-        <div class="cart-header-inner">
-            <a href="index.html" class="cart-logo">
-                ShopEase<span>.</span>
-            </a>
-
-            <nav class="cart-nav" aria-label="Main navigation">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="cart.html" class="cart-nav-active" aria-current="page">
-                    Cart <span id="cart-nav-count">0</span>
-                </a>
-            </nav>
         </div>
     </header>
 
+
+    <!-- ==================== MAIN CONTENT ==================== -->
     <main class="cart-main">
+
+        <!-- Page heading -->
         <section class="cart-page-heading">
+
             <div>
                 <p class="cart-eyebrow">YOUR SHOPPING BAG</p>
+
                 <h1>Shopping Cart</h1>
+
                 <p class="cart-subtitle">
                     Review your items and get ready for checkout.
                 </p>
             </div>
 
             <a href="index.html" class="cart-continue-top">
-                <span aria-hidden="true">←</span> Continue Shopping
+                <span aria-hidden="true">←</span>
+                Continue Shopping
             </a>
+
         </section>
 
+
+        <!-- Cart layout -->
         <div class="cart-layout">
-            <section class="cart-products-panel" aria-label="Cart products">
+
+            <!-- ==================== PRODUCTS PANEL ==================== -->
+            <section
+                class="cart-products-panel"
+                aria-label="Cart products"
+            >
+
                 <div class="cart-panel-heading">
                     <h2>Your Items</h2>
                     <span id="cart-item-count">0 items</span>
                 </div>
 
-                <div id="cart-product-list" class="cart-product-list"
-                     aria-live="polite">
-                    <!-- Products are rendered by cart.js -->
+
+                <!-- JavaScript inserts cart products here -->
+                <div
+                    id="cart-product-list"
+                    class="cart-product-list"
+                    aria-live="polite"
+                >
+                    <!-- Cart products are rendered by cart.js -->
                 </div>
 
-                <div id="cart-empty-state" class="cart-empty-state" hidden>
-                    <div class="cart-empty-icon" aria-hidden="true">
-                        <svg viewBox="0 0 64 64" fill="none">
-                            <path d="M8 12h7l6 29h27l8-21H18"
-                                  stroke="currentColor" stroke-width="3"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"/>
-                            <circle cx="26" cy="50" r="3"
-                                    stroke="currentColor" stroke-width="3"/>
-                            <circle cx="46" cy="50" r="3"
-                                    stroke="currentColor" stroke-width="3"/>
-                            <path d="M27 27h16M35 19v16"
-                                  stroke="currentColor" stroke-width="2.5"
-                                  stroke-linecap="round"/>
+
+                <!-- Empty cart message -->
+                <div
+                    id="cart-empty-state"
+                    class="cart-empty-state"
+                    hidden
+                >
+
+                    <div
+                        class="cart-empty-icon"
+                        aria-hidden="true"
+                    >
+                        <svg
+                            viewBox="0 0 64 64"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M8 12h7l6 29h27l8-21H18"
+                                stroke="currentColor"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+
+                            <circle
+                                cx="26"
+                                cy="50"
+                                r="3"
+                                stroke="currentColor"
+                                stroke-width="3"
+                            />
+
+                            <circle
+                                cx="46"
+                                cy="50"
+                                r="3"
+                                stroke="currentColor"
+                                stroke-width="3"
+                            />
+
+                            <path
+                                d="M27 27h16M35 19v16"
+                                stroke="currentColor"
+                                stroke-width="2.5"
+                                stroke-linecap="round"
+                            />
                         </svg>
                     </div>
 
                     <h3>Your cart is empty</h3>
+
                     <p>
                         You haven't added any products yet.
                         Explore our store and find something you love.
                     </p>
 
-                    <a href="index.html" class="cart-primary-link">
+                    <a
+                        href="index.html"
+                        class="cart-primary-link"
+                    >
                         Explore Products
                     </a>
+
                 </div>
 
-                <div class="cart-panel-footer" id="cart-panel-footer">
-                    <a href="index.html" class="cart-continue-link">
+
+                <!-- Cart actions -->
+                <div
+                    class="cart-panel-footer"
+                    id="cart-panel-footer"
+                >
+
+                    <a
+                        href="index.html"
+                        class="cart-continue-link"
+                    >
                         <span aria-hidden="true">←</span>
                         Continue Shopping
                     </a>
 
-                    <button type="button" id="cart-clear-button"
-                            class="cart-clear-button">
+                    <button
+                        type="button"
+                        id="cart-clear-button"
+                        class="cart-clear-button"
+                    >
                         Clear Cart
                     </button>
+
                 </div>
+
             </section>
 
-            <aside class="cart-summary-panel" aria-labelledby="cart-summary-title">
-                <h2 id="cart-summary-title">Order Summary</h2>
+
+            <!-- ==================== ORDER SUMMARY ==================== -->
+            <aside
+                class="cart-summary-panel"
+                aria-labelledby="cart-summary-title"
+            >
+
+                <h2 id="cart-summary-title">
+                    Order Summary
+                </h2>
+
 
                 <div class="cart-summary-row">
                     <span>Items</span>
                     <span id="cart-summary-quantity">0</span>
                 </div>
 
+
                 <div class="cart-summary-row">
                     <span>Subtotal</span>
                     <span id="cart-subtotal">₹0.00</span>
                 </div>
+
 
                 <div class="cart-summary-row">
                     <span>Shipping</span>
                     <span id="cart-shipping">₹0.00</span>
                 </div>
 
+
                 <p class="cart-shipping-note">
                     Shipping is estimated for this demo.
                 </p>
 
+
                 <div class="cart-summary-divider"></div>
+
 
                 <div class="cart-summary-total">
                     <span>Total</span>
                     <strong id="cart-total">₹0.00</strong>
                 </div>
 
-                <button type="button" id="cart-checkout-button"
-                        class="cart-checkout-button" disabled>
-                    Proceed to Checkout <span aria-hidden="true">→</span>
+
+                <button
+                    type="button"
+                    id="cart-checkout-button"
+                    class="cart-checkout-button"
+                    disabled
+                >
+                    Proceed to Checkout
+                    <span aria-hidden="true">→</span>
                 </button>
+
 
                 <p class="cart-demo-note">
                     Demo checkout only. No payment will be processed.
                 </p>
 
+
                 <div class="cart-trust-note">
                     <span aria-hidden="true">✓</span>
                     Review your order before continuing
                 </div>
+
             </aside>
+
         </div>
 
-        <div id="cart-toast" class="cart-toast" role="status"
-             aria-live="polite" hidden></div>
+
+        <!-- Accessible notification -->
+        <div
+            id="cart-toast"
+            class="cart-toast"
+            role="status"
+            aria-live="polite"
+            hidden
+        ></div>
+
     </main>
 
-    
-<footer class="cart-footer">
-    <a href="index.html" class="cart-footer-logo"
-       aria-label="NovaMart home">
-        <span class="cart-logo-nova">nova</span><span class="cart-logo-mart">mart.</span>
-    </a>
 
-    <p>© <span id="cart-year"></span> NovaMart. Student project demo.</p>
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="cart-footer">
 
-    <nav class="cart-footer-links" aria-label="Footer navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="cart.html">Cart</a>
-    </nav>
-</footer>
+        <a
+            href="index.html"
+            class="cart-footer-logo"
+            aria-label="NovaMart home"
+        >
+            <span class="cart-logo-nova">nova</span><span class="cart-logo-mart">mart.</span>
+        </a>
+
+        <p>
+            © <span id="cart-year"></span>
+            NovaMart. Student project demo.
+        </p>
+
+        <nav
+            class="cart-footer-links"
+            aria-label="Footer navigation"
+        >
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+
+    </footer>
 
 </body>
 </html>
+
