@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover stylish fashion, electronics, accessories and everyday essentials at NovaMart.">
+    <title>NovaMart | Shop Smarter</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js" defer></script>
+</head>
+<body>
+
+    <!-- Announcement bar -->
+    <div class="home-announcement">
+        <p>Free shipping on orders above ₹999 <span>✦</span> Discover something you love.</p>
+    </div>
+
+    <!-- Navigation -->
+    <header class="home-header">
+        <nav class="home-navbar home-container" aria-label="Main navigation">
+            <a href="index.html" class="home-logo" aria-label="NovaMart Home">
+                nova<span>mart.</span>
+            </a>
+
+            <button class="home-menu-toggle" id="homeMenuToggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="homeNavLinks">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="home-nav-links" id="homeNavLinks">
+                <a href="index.html" class="home-nav-link home-nav-active">Home</a>
+                <a href="#homeCategories" class="home-nav-link">Categories</a>
+                <a href="#homeProducts" class="home-nav-link">Shop</a>
+                <a href="about.html" class="home-nav-link">About</a>
+            </div>
+
+            <div class="home-nav-actions">
+                <button class="home-icon-button" id="homeSearchToggle"
+                        aria-label="Go to product search">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="10.8" cy="10.8" r="6.8"></circle>
+                        <path d="m16 16 4.5 4.5"></path>
+                    </svg>
+                </button>
+
+                <a href="cart.html" class="home-cart-button" aria-label="Shopping cart">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M3 3h2l2.4 11.2a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 1.9-1.5L22 7H6"></path>
+                        <circle cx="10" cy="20" r="1.2"></circle>
+                        <circle cx="18" cy="20" r="1.2"></circle>
+                    </svg>
+                    <span>Cart</span>
+                    <span class="home-cart-count" id="homeCartCount">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero section -->
+        <section class="home-hero">
+            <div class="home-container home-hero-grid">
+                <div class="home-hero-content">
+                    <span class="home-eyebrow">
+                        <span class="home-eyebrow-dot"></span>
+                        YOUR EVERYDAY, UPGRADED
+                    </span>
+
+                    <h1>Good finds.<br>Great <span>feelings.</span></h1>
+
+                    <p class="home-hero-description">
+                        From everyday essentials to little luxuries,
+                        discover products that make every day better.
+                    </p>
+
+                    <div class="home-hero-actions">
+                        <a href="#homeProducts" class="home-button home-button-primary">
+                            Explore collection <span>↗</span>
+                        </a>
+                        <a href="#homeCategories" class="home-text-link">
+                            Browse categories <span>→</span>
+                        </a>
+                    </div>
+
+                    <div class="home-hero-trust">
+                        <div class="home-trust-avatars" aria-hidden="true">
+                            <span>A</span>
+                            <span>R</span>
+                            <span>M</span>
+                            <span>+</span>
+                        </div>
+                        <div>
+                            <strong>Loved by everyday shoppers</strong>
+                            <p>Thoughtful picks. Everyday value.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home-hero-visual">
+                    <div class="home-hero-image-wrap">
+                        <img
+                            src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=85"
+                            alt="Modern fashion and lifestyle store"
+                            class="home-hero-image"
+                        >
+                        <div class="home-hero-image-overlay"></div>
+
+                        <div class="home-floating-card home-floating-top">
+                            <span class="home-floating-icon">✦</span>
+                            <div>
+                                <strong>Curated for you</strong>
+                                <p>Fresh finds, every week</p>
+                            </div>
+                        </div>
+
+                        <div class="home-floating-card home-floating-bottom">
+                            <span class="home-discount">NEW</span>
+                            <div>
+                                <strong>Your next favourite</strong>
+                                <p>It's waiting to be discovered.</p>
+                            </div>
+                            <span class="home-floating-arrow">↗</span>
+                        </div>
+                    </div>
+
+                    <div class="home-hero-decoration"></div>
+                </div>
+            </div>
+
+            <div class="home-hero-bottom-line">
+                <span>STYLE</span>
+                <span>TECH</span>
+                <span>LIFESTYLE</span>
+                <span>EVERYDAY ESSENTIALS</span>
+            </div>
+        </section>
+
+        <!-- Benefits strip -->
+        <section class="home-benefits" aria-label="Shopping benefits">
+            <div class="home-container home-benefits-grid">
+                <div class="home-benefit">
+                    <span class="home-benefit-icon">↗</span>
+                    <div>
+                        <h3>Easy shopping</h3>
+                        <p>A smooth shopping experience</p>
+                    </div>
+                </div>
+
+                <div class="home-benefit">
+                    <span class="home-benefit-icon">◇</span>
+                    <div>
+                        <h3>Quality picks</h3>
+                        <p>Products worth discovering</p>
+                    </div>
+                </div>
+
+                <div class="home-benefit">
+                    <span class="home-benefit-icon">♡</span>
+                    <div>
+                        <h3>Made for you</h3>
+                        <p>Everyday favourites in one place</p>
+                    </div>
+                </div>
+
+                <div class="home-benefit">
+                    <span class="home-benefit-icon">✓</span>
+                    <div>
+                        <h3>Simple checkout</h3>
+                        <p>Convenient cart management</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="home-section home-categories-section" id="homeCategories">
+            <div class="home-container">
+                <div class="home-section-heading">
+                    <div>
+                        <span class="home-section-label">EXPLORE YOUR STYLE</span>
+                        <h2>Shop by <span>category.</span></h2>
+                        <p>Find your next favourite, all in one place.</p>
+                    </div>
+                    <a href="#homeProducts" class="home-view-link">
+                        View all products <span>→</span>
+                    </a>
+                </div>
+
+                <div class="home-category-grid">
+                    <a href="#homeProducts" class="home-category-card"
+                       data-category-link="Fashion">
+                        <img
+                            src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=700&q=80"
+                            alt="Fashion clothing collection"
+                            loading="lazy"
+                        >
+                        <div class="home-category-overlay"></div>
+                        <div class="home-category-info">
+                            <span>01 / STYLE</span>
+                            <h3>Fashion</h3>
+                            <p>Explore collection ↗</p>
+                        </div>
+                    </a>
+
+                    <a href="#homeProducts" class="home-category-card"
+                       data-category-link="Electronics">
+                        <img
+                            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80"
+                            alt="Headphones and electronics"
+                            loading="lazy"
+                        >
+                        <div class="home-category-overlay"></div>
+                        <div class="home-category-info">
+                            <span>02 / TECH</span>
+                            <h3>Electronics</h3>
+                            <p>Explore collection ↗</p>
+                        </div>
+                    </a>
+
+                    <a href="#homeProducts" class="home-category-card"
+                       data-category-link="Accessories">
+                        <img
+                            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80"
+                            alt="Minimal wristwatch accessory"
+                            loading="lazy"
+                        >
+                        <div class="home-category-overlay"></div>
+                        <div class="home-category-info">
+                            <span>03 / DETAILS</span>
+                            <h3>Accessories</h3>
+                            <p>Explore collection ↗</p>
+                        </div>
+                    </a>
+
+                    <a href="#homeProducts" class="home-category-card"
+                       data-category-link="Lifestyle">
+                        <img
+                            src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=700&q=80"
+                            alt="Contemporary home decor"
+                            loading="lazy"
+                        >
+                        <div class="home-category-overlay"></div>
+                        <div class="home-category-info">
+                            <span>04 / LIVING</span>
+                            <h3>Lifestyle</h3>
+                            <p>Explore collection ↗</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured products -->
+        <section class="home-section home-products-section" id="homeProducts">
+            <div class="home-container">
+                <div class="home-section-heading home-products-heading">
+                    <div>
+                        <span class="home-section-label">THE GOOD STUFF</span>
+                        <h2>Picked for <span>you.</span></h2>
+                        <p>Everyday favourites that deserve a place in your life.</p>
+                    </div>
+
+                    <label class="home-search-box" for="homeProductSearch">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="10.8" cy="10.8" r="6.8"></circle>
+                            <path d="m16 16 4.5 4.5"></path>
+                        </svg>
+                        <input type="search" id="homeProductSearch"
+                               placeholder="Find your favourite..."
+                               autocomplete="off">
+                    </label>
+                </div>
+
+                <div class="home-filter-bar" aria-label="Filter products">
+                    <button class="home-filter-button home-filter-active"
+                            data-filter="All" aria-pressed="true">All products</button>
+                    <button class="home-filter-button"
+                            data-filter="Fashion" aria-pressed="false">Fashion</button>
+                    <button class="home-filter-button"
+                            data-filter="Electronics" aria-pressed="false">Electronics</button>
+                    <button class="home-filter-button"
+                            data-filter="Accessories" aria-pressed="false">Accessories</button>
+                    <button class="home-filter-button"
+                            data-filter="Lifestyle" aria-pressed="false">Lifestyle</button>
+                </div>
+
+                <div class="home-product-grid" id="homeProductGrid" aria-live="polite">
+                    <!-- Product cards are generated by home.js -->
+                </div>
+
+                <p class="home-no-products" id="homeNoProducts" hidden>
+                    No products found. Try another search or category.
+                </p>
+
+                <div class="home-products-footer">
+                    <p>Good things are just a click away.</p>
+                    <a href="cart.html" class="home-button home-button-dark">
+                        View your cart <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promotional banner -->
+        <section class="home-promo-section">
+            <div class="home-container">
+                <div class="home-promo-card">
+                    <div class="home-promo-content">
+                        <span class="home-section-label">A LITTLE SOMETHING EXTRA</span>
+                        <h2>Make room for<br>something <span>good.</span></h2>
+                        <p>
+                            Find practical essentials, thoughtful accessories,
+                            and fresh picks for your everyday routine.
+                        </p>
+                        <a href="#homeProducts" class="home-button home-button-light">
+                            Find your favourites <span>↗</span>
+                        </a>
+                    </div>
+
+                    <div class="home-promo-image-wrap">
+                        <img
+                            src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=1000&q=85"
+                            alt="Carefully curated retail collection"
+                            loading="lazy"
+                        >
+                        <div class="home-promo-stamp">GOOD<br>THINGS<br>INSIDE ✳</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="home-newsletter-section">
+            <div class="home-container home-newsletter">
+                <div>
+                    <span class="home-section-label">STAY IN THE LOOP</span>
+                    <h2>A little inspiration, <span>delivered.</span></h2>
+                    <p>Sign up for product updates and fresh finds. No spam, ever.</p>
+                </div>
+
+                <form class="home-newsletter-form" id="homeNewsletterForm">
+                    <label class="home-visually-hidden" for="homeNewsletterEmail">
+                        Email address
+                    </label>
+                    <input type="email" id="homeNewsletterEmail"
+                           placeholder="Enter your email address" required>
+                    <button type="submit">Sign me up <span>→</span></button>
+                </form>
+                <p class="home-newsletter-message" id="homeNewsletterMessage"
+                   role="status" aria-live="polite"></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="home-footer">
+        <div class="home-container">
+            <div class="home-footer-grid">
+                <div class="home-footer-brand">
+                    <a href="index.html" class="home-logo home-footer-logo">
+                        nova<span>mart.</span>
+                    </a>
+                    <p>
+                        Thoughtful finds for everyday living.
+                        Discover more of what you love.
+                    </p>
+                    <div class="home-social-links">
+                        <a href="https://www.instagram.com/" target="_blank"
+                           rel="noopener noreferrer" aria-label="Instagram">ig</a>
+                        <a href="https://www.facebook.com/" target="_blank"
+                           rel="noopener noreferrer" aria-label="Facebook">fb</a>
+                        <a href="https://www.pinterest.com/" target="_blank"
+                           rel="noopener noreferrer" aria-label="Pinterest">p</a>
+                    </div>
+                </div>
+
+                <div class="home-footer-column">
+                    <h3>Explore</h3>
+                    <a href="index.html">Home</a>
+                    <a href="#homeCategories">Categories</a>
+                    <a href="#homeProducts">Shop products</a>
+                </div>
+
+                <div class="home-footer-column">
+                    <h3>About us</h3>
+                    <a href="about.html">Our story</a>
+                    <a href="about.html">Our values</a>
+                    <a href="about.html">Learn more</a>
+                </div>
+
+                <div class="home-footer-column">
+                    <h3>Your shopping</h3>
+                    <a href="cart.html">Shopping cart</a>
+                    <a href="#homeProducts">Discover products</a>
+                    <a href="#homeNewsletterForm">Get updates</a>
+                </div>
+            </div>
+
+            <div class="home-footer-bottom">
+                <p>© <span id="homeCurrentYear"></span> NovaMart. Built with care.</p>
+                <p>Good finds. Great feelings.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast notification -->
+    <div class="home-toast" id="homeToast" role="status"
+         aria-live="polite"></div>
+
+</body>
+</html>
