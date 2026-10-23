@@ -4,378 +4,304 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover our story, mission, vision, and commitment to delivering a better online shopping experience.">
-    <meta name="theme-color" content="#ffffff">
-    <title>About Us | Shopora</title>
+    <meta name="description" content="Discover NovaMart's story, mission, vision, and commitment to a better shopping experience.">
+    <meta name="theme-color" content="#FBFAF7">
+    <title>About Us | NovaMart</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="about.css">
     <script src="about.js" defer></script>
 </head>
 <body>
-
-    <!-- Header -->
     <header class="about-header">
         <div class="about-container about-navbar">
-            <a href="index.html" class="about-logo" aria-label="Shopora home">
-                Shop<span>ora.</span>
+            <a href="index.html" class="about-logo" aria-label="NovaMart home">
+                <span class="about-logo-nova">nova</span><span class="about-logo-mart">mart.</span>
             </a>
 
-            <button
-                class="about-menu-toggle"
-                id="aboutMenuToggle"
-                aria-label="Open navigation menu"
-                aria-controls="aboutNavigation"
-                aria-expanded="false"
-                type="button">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="about-menu-toggle" id="aboutMenuToggle"
+                    type="button" aria-label="Open navigation"
+                    aria-expanded="false" aria-controls="aboutNavigation">
+                <span></span><span></span><span></span>
             </button>
 
             <nav class="about-navigation" id="aboutNavigation" aria-label="Main navigation">
                 <a href="index.html" class="about-nav-link">Home</a>
                 <a href="about.html" class="about-nav-link about-nav-active" aria-current="page">About</a>
-                <a href="cart.html" class="about-nav-link">Cart</a>
+                <a href="cart.html" class="about-nav-link about-cart-link">
+                    Cart <span class="about-cart-badge" id="aboutCartBadge">0</span>
+                </a>
             </nav>
         </div>
     </header>
 
     <main>
-        <!-- Hero -->
         <section class="about-hero">
             <div class="about-container about-hero-grid">
                 <div class="about-hero-content">
-                    <span class="about-eyebrow">GET TO KNOW US</span>
-                    <h1>Shopping made simple. <span>Life made better.</span></h1>
+                    <span class="about-eyebrow">GET TO KNOW NOVAMART</span>
+                    <h1>Everyday shopping.<br><span>Made better.</span></h1>
                     <p>
-                        Welcome to Shopora, where great products meet a smooth,
-                        convenient, and enjoyable online shopping experience.
-                        We believe finding what you need should always feel easy.
+                        Welcome to NovaMart, an online shopping destination built
+                        around convenience, thoughtful choices, and a customer-first
+                        experience. Discover a simpler way to shop for the things
+                        that matter to you.
                     </p>
                     <a href="index.html" class="about-button">
-                        Explore Our Store <span aria-hidden="true">&rarr;</span>
+                        Explore the store <span aria-hidden="true">↗</span>
                     </a>
-
-                    <div class="about-hero-note">
-                        <span class="about-note-icon" aria-hidden="true">✓</span>
-                        Thoughtful service. Quality choices. Customer first.
-                    </div>
+                    <p class="about-hero-note">Thoughtful choices. Simple shopping. You first.</p>
                 </div>
 
                 <div class="about-hero-visual">
                     <img
-                        class="about-hero-image"
-                        src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1000&q=85"
-                        alt="Modern retail store with an inviting shopping environment"
-                        fetchpriority="high">
-
-                    <div class="about-floating-card">
-                        <span class="about-floating-icon" aria-hidden="true">♡</span>
+                        src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1100&q=85"
+                        alt="Welcoming retail shopping environment"
+                        class="about-hero-image">
+                    <div class="about-floating-note">
+                        <span class="about-note-icon" aria-hidden="true">✳</span>
                         <div>
-                            <strong>Made for you</strong>
-                            <p>Your needs come first.</p>
+                            <strong>Shopping, simplified.</strong>
+                            <p>Designed around your everyday needs.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Highlights -->
-        <section class="about-highlights" aria-label="Our highlights">
+        <section class="about-highlights" aria-label="NovaMart highlights">
             <div class="about-container about-highlights-grid">
                 <article class="about-highlight">
-                    <span class="about-highlight-icon" aria-hidden="true">✦</span>
-                    <div>
-                        <h3>Quality Focus</h3>
-                        <p>Products selected with care</p>
-                    </div>
+                    <span class="about-highlight-icon" aria-hidden="true">◇</span>
+                    <div><h2>Thoughtful Choices</h2><p>Products worth discovering</p></div>
                 </article>
-
                 <article class="about-highlight">
                     <span class="about-highlight-icon" aria-hidden="true">♡</span>
-                    <div>
-                        <h3>Customer First</h3>
-                        <p>Your experience matters</p>
-                    </div>
+                    <div><h2>Customer First</h2><p>Your needs matter</p></div>
                 </article>
-
                 <article class="about-highlight">
                     <span class="about-highlight-icon" aria-hidden="true">↗</span>
-                    <div>
-                        <h3>Easy Shopping</h3>
-                        <p>A simple shopping journey</p>
-                    </div>
+                    <div><h2>Easy Navigation</h2><p>A smoother shopping journey</p></div>
                 </article>
-
                 <article class="about-highlight">
-                    <span class="about-highlight-icon" aria-hidden="true">◇</span>
-                    <div>
-                        <h3>Always Improving</h3>
-                        <p>Better experiences every day</p>
-                    </div>
+                    <span class="about-highlight-icon" aria-hidden="true">✳</span>
+                    <div><h2>Always Improving</h2><p>Better with every step</p></div>
                 </article>
             </div>
         </section>
 
-        <!-- Introduction and Story -->
-        <section class="about-section about-intro-section">
+        <section class="about-section">
             <div class="about-container about-intro-grid">
-                <div class="about-intro-image-wrap">
+                <div class="about-image-frame">
                     <img
                         src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=85"
-                        alt="Customer enjoying a convenient shopping experience"
-                        class="about-intro-image"
+                        alt="Customer shopping online"
                         loading="lazy">
-                    <div class="about-image-caption">
-                        <span>Our promise</span>
-                        <strong>A better way to shop.</strong>
+                    <div class="about-image-label">
+                        <span>THE NOVAMART APPROACH</span>
+                        <strong>Shopping with you in mind.</strong>
                     </div>
                 </div>
-
-                <div class="about-intro-content">
+                <div class="about-copy">
                     <span class="about-eyebrow">WHO WE ARE</span>
-                    <h2>More than a store, we're here for <span>you.</span></h2>
+                    <h2>A little more than <span>an online store.</span></h2>
                     <p>
-                        Shopora is an e-commerce concept built around a simple idea:
-                        online shopping should be convenient, clear, and enjoyable.
-                        We bring products and people together through a user-friendly
-                        shopping experience.
+                        NovaMart is an e-commerce project built around one simple
+                        idea: shopping online should feel straightforward,
+                        accessible, and enjoyable.
                     </p>
                     <p>
-                        From discovering products to exploring your shopping cart,
-                        our goal is to make every step feel straightforward. We
-                        continually look for ways to make our store more useful,
-                        accessible, and welcoming.
+                        We bring together product discovery, clear information,
+                        and an easy-to-use shopping experience. Every part of our
+                        store is designed with the customer's journey in mind.
+                    </p>
+                    <p>
+                        We believe good digital experiences are built through
+                        thoughtful design, attention to detail, and a willingness
+                        to keep learning and improving.
                     </p>
                     <a href="#about-values" class="about-text-link">
-                        Discover what matters to us <span aria-hidden="true">&rarr;</span>
+                        What matters to us <span aria-hidden="true">→</span>
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- Our Story -->
         <section class="about-section about-story-section">
             <div class="about-container about-story-grid">
-                <div class="about-story-content">
+                <div class="about-copy">
                     <span class="about-eyebrow">OUR STORY</span>
-                    <h2>A simple idea with a <span>clear purpose.</span></h2>
+                    <h2>Built around a simple <span>idea.</span></h2>
                     <p>
-                        Every great shopping experience starts with understanding
-                        what customers need. Shopora was imagined to bring together
-                        thoughtful product discovery, simple navigation, and a
-                        customer-focused approach in one convenient place.
+                        NovaMart began with the idea of making everyday online
+                        shopping feel less complicated. We wanted to create a
+                        place where customers could explore products, find
+                        useful information, and move through the shopping journey
+                        with confidence.
                     </p>
                     <p>
-                        Our journey represents a commitment to learning, improving,
-                        and building a digital shopping experience that puts people
-                        at the centre. We believe that even small improvements can
-                        make online shopping feel more personal and effortless.
+                        Our journey is about learning what makes a digital store
+                        useful and continually improving the experience. We value
+                        practical solutions, clear communication, and design that
+                        helps customers focus on what they need.
                     </p>
-                    <div class="about-story-quote">
-                        "Good shopping experiences begin with understanding people."
-                    </div>
+                    <blockquote class="about-quote">
+                        “The best shopping experience is one that puts people first.”
+                    </blockquote>
                 </div>
-
-                <div class="about-story-image-wrap">
+                <div class="about-story-image">
                     <img
-                        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85"
-                        alt="Team collaborating on a digital project"
-                        class="about-story-image"
+                        src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=85"
+                        alt="Team members collaborating on ideas"
                         loading="lazy">
                 </div>
             </div>
         </section>
 
-        <!-- Mission and Vision -->
-        <section class="about-section about-purpose-section">
+        <section class="about-section">
             <div class="about-container">
                 <div class="about-section-heading">
                     <span class="about-eyebrow">OUR PURPOSE</span>
-                    <h2>What drives <span>everything we do</span></h2>
+                    <h2>Where we're going, <span>and why.</span></h2>
                     <p>Our mission and vision guide the experience we aim to create.</p>
                 </div>
 
                 <div class="about-purpose-grid">
-                    <article class="about-purpose-card about-mission-card">
+                    <article class="about-purpose-card">
+                        <span class="about-card-number">01 / MISSION</span>
                         <div class="about-purpose-icon" aria-hidden="true">◎</div>
-                        <span class="about-card-label">OUR MISSION</span>
-                        <h3>Make shopping easier for everyone.</h3>
+                        <h3>Make everyday shopping simpler.</h3>
                         <p>
-                            To provide a convenient, accessible, and customer-focused
-                            online shopping experience through clear information,
-                            thoughtful design, and continuous improvement.
+                            Our mission is to offer a convenient, user-friendly
+                            shopping experience through thoughtful product
+                            presentation, clear information, and customer-focused
+                            design.
                         </p>
                     </article>
-
-                    <article class="about-purpose-card about-vision-card">
+                    <article class="about-purpose-card about-purpose-dark">
+                        <span class="about-card-number">02 / VISION</span>
                         <div class="about-purpose-icon" aria-hidden="true">⌁</div>
-                        <span class="about-card-label">OUR VISION</span>
-                        <h3>Create a shopping experience people trust.</h3>
+                        <h3>Build a store customers feel good using.</h3>
                         <p>
-                            To build a welcoming digital marketplace known for
-                            simplicity, reliability, meaningful customer experiences,
-                            and a commitment to getting better every day.
+                            Our vision is to create a welcoming digital marketplace
+                            known for simplicity, reliability, and continuous
+                            improvement in every part of the customer journey.
                         </p>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- Why Choose Us -->
         <section class="about-section about-choose-section">
             <div class="about-container">
                 <div class="about-section-heading">
-                    <span class="about-eyebrow">THE SHOPORA DIFFERENCE</span>
-                    <h2>Why choose <span>us?</span></h2>
-                    <p>We focus on the details that make online shopping better.</p>
+                    <span class="about-eyebrow">THE NOVAMART DIFFERENCE</span>
+                    <h2>Why choose <span>NovaMart?</span></h2>
+                    <p>We focus on the details that help make shopping easier.</p>
                 </div>
 
                 <div class="about-choose-grid">
                     <article class="about-choose-card">
-                        <div class="about-choose-icon" aria-hidden="true">⚡</div>
+                        <span class="about-choose-icon" aria-hidden="true">↗</span>
                         <h3>Simple Experience</h3>
-                        <p>
-                            Browse pages designed to help you find information
-                            and explore products with ease.
-                        </p>
+                        <p>Clear navigation and a layout designed to make exploring easier.</p>
                     </article>
-
                     <article class="about-choose-card">
-                        <div class="about-choose-icon" aria-hidden="true">◇</div>
-                        <h3>Quality Mindset</h3>
-                        <p>
-                            We value thoughtful product presentation and clear,
-                            helpful information.
-                        </p>
+                        <span class="about-choose-icon" aria-hidden="true">◇</span>
+                        <h3>Clear Information</h3>
+                        <p>Product presentation that helps customers make informed choices.</p>
                     </article>
-
                     <article class="about-choose-card">
-                        <div class="about-choose-icon" aria-hidden="true">♡</div>
+                        <span class="about-choose-icon" aria-hidden="true">♡</span>
                         <h3>Customer Focus</h3>
-                        <p>
-                            We put customer needs at the heart of our design
-                            decisions and improvements.
-                        </p>
+                        <p>Design decisions shaped around useful and accessible experiences.</p>
                     </article>
-
                     <article class="about-choose-card">
-                        <div class="about-choose-icon" aria-hidden="true">↻</div>
+                        <span class="about-choose-icon" aria-hidden="true">↻</span>
                         <h3>Continuous Growth</h3>
-                        <p>
-                            We embrace feedback, learn from experience, and
-                            look for better ways to serve customers.
-                        </p>
+                        <p>A commitment to learning, listening, and improving over time.</p>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- Company Values -->
-        <section class="about-section about-values-section" id="about-values">
+        <section class="about-section" id="about-values">
             <div class="about-container about-values-grid">
-                <div class="about-values-intro">
+                <div class="about-copy">
                     <span class="about-eyebrow">WHAT WE BELIEVE IN</span>
-                    <h2>Our values shape <span>our journey.</span></h2>
+                    <h2>Our values shape <span>every choice.</span></h2>
                     <p>
-                        Our values reflect the principles behind the shopping
-                        experience we want to build and the relationships we
-                        hope to develop with our customers.
+                        The principles behind NovaMart help guide how we approach
+                        our products, our design, and the experience we want
+                        customers to have.
                     </p>
                 </div>
-
                 <div class="about-values-list">
-                    <article class="about-value-item">
-                        <span class="about-value-number">01</span>
-                        <div>
-                            <h3>Integrity</h3>
-                            <p>Communicate clearly and treat customers honestly.</p>
-                        </div>
+                    <article class="about-value">
+                        <span>01</span>
+                        <div><h3>Integrity</h3><p>Value honesty, clarity, and straightforward information.</p></div>
                     </article>
-
-                    <article class="about-value-item">
-                        <span class="about-value-number">02</span>
-                        <div>
-                            <h3>Customer Care</h3>
-                            <p>Listen to customer needs and value their experience.</p>
-                        </div>
+                    <article class="about-value">
+                        <span>02</span>
+                        <div><h3>Customer Care</h3><p>Consider customer needs at every step of the journey.</p></div>
                     </article>
-
-                    <article class="about-value-item">
-                        <span class="about-value-number">03</span>
-                        <div>
-                            <h3>Innovation</h3>
-                            <p>Explore better ideas and practical digital solutions.</p>
-                        </div>
+                    <article class="about-value">
+                        <span>03</span>
+                        <div><h3>Innovation</h3><p>Look for practical ideas that improve the shopping experience.</p></div>
                     </article>
-
-                    <article class="about-value-item">
-                        <span class="about-value-number">04</span>
-                        <div>
-                            <h3>Responsibility</h3>
-                            <p>Make thoughtful decisions and keep improving.</p>
-                        </div>
+                    <article class="about-value">
+                        <span>04</span>
+                        <div><h3>Responsibility</h3><p>Make thoughtful decisions and learn from feedback.</p></div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- Call to Action -->
-        <section class="about-cta-section">
+        <section class="about-cta">
             <div class="about-container about-cta-content">
                 <span class="about-eyebrow">YOUR NEXT DISCOVERY STARTS HERE</span>
-                <h2>Ready to explore something <span>great?</span></h2>
-                <p>
-                    Visit our store and discover a simple, welcoming way
-                    to explore your next purchase.
-                </p>
+                <h2>Find your next favourite <span>with NovaMart.</span></h2>
+                <p>Explore our store and enjoy a simpler approach to online shopping.</p>
                 <a href="index.html" class="about-button about-button-light">
-                    Start Exploring <span aria-hidden="true">&rarr;</span>
+                    Explore the store <span aria-hidden="true">↗</span>
                 </a>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="about-footer">
         <div class="about-container">
             <div class="about-footer-main">
                 <div class="about-footer-brand">
-                    <a href="index.html" class="about-logo about-footer-logo">
-                        Shop<span>ora.</span>
+                    <a href="index.html" class="about-logo about-footer-logo" aria-label="NovaMart home">
+                        <span class="about-logo-nova">nova</span><span class="about-logo-mart">mart.</span>
                     </a>
                     <p>
-                        A thoughtful approach to online shopping.
-                        Discover more, shop simply, and enjoy the experience.
+                        Everyday shopping, made better. A thoughtful approach
+                        to discovering the things you need.
                     </p>
                 </div>
-
                 <div class="about-footer-links">
-                    <h3>Quick Links</h3>
+                    <h2>Explore</h2>
                     <a href="index.html">Home</a>
                     <a href="about.html">About Us</a>
                     <a href="cart.html">Shopping Cart</a>
                 </div>
-
                 <div class="about-footer-links">
-                    <h3>Our Promise</h3>
-                    <span>Customer Focus</span>
-                    <span>Simple Shopping</span>
-                    <span>Continuous Improvement</span>
+                    <h2>Our Values</h2>
+                    <a href="#about-values">Customer First</a>
+                    <a href="#about-values">Integrity</a>
+                    <a href="#about-values">Continuous Growth</a>
                 </div>
             </div>
-
             <div class="about-footer-bottom">
-                <p>
-                    &copy; <span id="aboutCurrentYear"></span> Shopora.
-                    All rights reserved.
-                </p>
-                <a href="#top" class="about-back-top" id="aboutBackTop">
-                    Back to top ↑
-                </a>
+                <p>&copy; <span id="aboutCurrentYear"></span> NovaMart. All rights reserved.</p>
+                <a href="#top" id="aboutBackTop">Back to top ↑</a>
             </div>
         </div>
     </footer>
-
 </body>
 </html>
